@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Challenge</title>
+</head>
+<body style="background-color:powderblue;">
+<h1>Welcome to the Bridge of Death</h1>
+<h2>He who would cross the Bridge of Death
+    <br /><br />Must Answer Me
+    <br /><br />These Questions Three
+    <br /><br />Ere the other side he see</h2>
+<form th:action="@{/askQuestion}" method="post">
+    <input style="color:darkorange;" type="submit" value="Go To Questions">
+</form>
+
+    <p th:text="${bridgekeeper.challenge}">tada</p>
+</body>
+</html>
