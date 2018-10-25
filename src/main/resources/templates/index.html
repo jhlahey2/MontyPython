@@ -5,15 +5,18 @@
     <title>Challenge</title>
 </head>
 <body style="background-color:powderblue;">
-<h1>Welcome to the Bridge of Death</h1>
-<h2>He who would cross the Bridge of Death
+<!-- <img src="/src/main/resources/images/bridgekeeperimage.jpeg" alt="Bridgekeeper" height="42" width="42" align="center"> -->
+<p align="center"><img src="images/bridgekeeperimage.jpeg" alt="Bridgekeeper" height="400" width="600" ></p>
+<h1 align="center">Welcome to the Bridge of DEATH!</h1>
+<h2 align="center">He who would cross the Bridge of Death
     <br /><br />Must Answer Me
     <br /><br />These Questions Three
     <br /><br />Ere the other side he see</h2>
+<div align="center">
 <form th:action="@{/askQuestion}" method="post">
-    <input style="color:darkorange;" type="submit" value="Go To Questions">
+    <input align="center" style="color:darkorange;" type="submit" value="Go To Questions">
 </form>
-
-    <p th:text="${bridgekeeper.challenge}">tada</p>
+</div>
+    <!-- <p th:text="${bridgekeeper.challenge}">tada</p> -->
 </body>
 </html>

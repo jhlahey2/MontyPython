@@ -16,7 +16,7 @@ public class HomeController {
     BridgeKeeper bridgeKeeper;
     Random random;
 
-    public HomeController{
+    public HomeController(){
 
         pilgrim = new Pilgrim();
         bridgeKeeper = new BridgeKeeper();
@@ -27,30 +27,34 @@ public class HomeController {
 
         String bridgeQuestion = null;
 
-        if(pilgrim.getName().equals(null)){
-
-            bridgeQuestion = bridgeKeeper.getNameQuestion();
-
-        }else if(pilgrim.getQuest().equalsIgnoreCase(null)){
-
-            bridgeQuestion = bridgeKeeper.getQuestQuestion();
-
-        }else if (pilgrim.get){
-
-            int iQuestNum = (random.nextInt(100) %2);
-
-            if(iQuestNum == 0 ){
-
-                bridgeQuestion = bridgeKeeper.getColorQuestion();
-            }
-            else {
-
-                bridgeQuestion = bridgeKeeper.getVelocityQuestion();
-
-            }
-
-        }
-            bridgeQuestion
+//        if(pilgrim.getName().equals(null)){
+//
+//            bridgeQuestion = bridgeKeeper.getNameQuestion();
+//
+//        }else if(pilgrim.getQuest().equalsIgnoreCase(null)){
+//
+//            bridgeQuestion = bridgeKeeper.getQuestQuestion();
+//
+//        }else if (pilgrim.getQuest().equals(null)){
+//
+//            int iQuestNum = (random.nextInt(100) %2);
+//
+//            if(iQuestNum == 0 ){
+//
+//                bridgeQuestion = bridgeKeeper.getColorQuestion();
+//            }
+//            else {
+//
+//                bridgeQuestion = bridgeKeeper.getVelocityQuestion();
+//
+//            }
+//
+//        }
+//        else{
+//
+//            //generate random question
+//        }
+            //bridgeQuestion
 
         return "/questions";
     }

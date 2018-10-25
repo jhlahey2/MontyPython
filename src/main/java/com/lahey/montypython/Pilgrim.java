@@ -4,9 +4,9 @@ public class Pilgrim {
 
     String name;
     String quest;
-    String random
-//    String favoriteColor;
-//    String velocity;
+    String random;
+    String favoriteColor;
+    String velocity;
 
     //default constructor
     public Pilgrim() {
